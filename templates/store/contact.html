@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}{{ title }} - Modern Website{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-primary text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 fw-bold mb-3">{{ title }}</h1>
+                <p class="lead">{{ subtitle }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Content -->
+<section class="contact-content py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="contact-form">
+                    <h2 class="fw-bold mb-4">Send us a Message</h2>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label fw-medium">First Name *</label>
+                                <input type="text" class="form-control form-control-lg" id="firstName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label fw-medium">Last Name *</label>
+                                <input type="text" class="form-control form-control-lg" id="lastName" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="email" class="form-label fw-medium">Email Address *</label>
+                                <input type="email" class="form-control form-control-lg" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label fw-medium">Subject *</label>
+                                <input type="text" class="form-control form-control-lg" id="subject" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-medium">Message *</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <div class="contact-info">
+                    <h3 class="fw-bold mb-4">Get in Touch</h3>
+                    
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-3">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Address</h6>
+                            <p class="text-muted mb-0">123 Web Street<br>Digital City, DC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-3">
+                            <div class="bg-success rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Phone</h6>
+                            <p class="text-muted mb-0">+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-3">
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="text-muted mb-0">info@modernsite.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item d-flex mb-4">
+                        <div class="contact-icon me-3">
+                            <div class="bg-warning rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Business Hours</h6>
+                            <p class="text-muted mb-0">Mon - Fri: 9:00 AM - 6:00 PM<br>Sat - Sun: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links mt-4">
+                        <h6 class="fw-bold mb-3">Follow Us</h6>
+                        <a href="#" class="btn btn-outline-primary btn-sm me-2 mb-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-info btn-sm me-2 mb-2">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-danger btn-sm me-2 mb-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-dark btn-sm me-2 mb-2">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
